@@ -8,9 +8,9 @@ def parse_args():
     # Model parameters
     parser.add_argument('--model-type', type=str, default='YOLO', choices=['YOLO', 'RTDETR'],
                         help='Model type to train (YOLO or RTDETR)')
-    parser.add_argument('--model-cfg', type=str, default='yolov8s-updated.yaml',
+    parser.add_argument('--model-cfg', type=str, default='models_cfg/yolov8-p2_1_att.yaml',
                         help='Path to model configuration file (.yaml)')
-    parser.add_argument('--model-weights', type=str, default='yolov8-updated.pt',
+    parser.add_argument('--model-weights', type=str, default='pretraind_models/pm.pt',
                         help='Path to pretrained weights (.pt)')
 
     # Training parameters
