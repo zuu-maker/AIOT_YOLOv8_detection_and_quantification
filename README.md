@@ -4,6 +4,12 @@
 
 This repository contains tools for training YOLOv8 models for crack/spalls detection and analyzing detected cracks/spalls.
 
+1. Download PyTorch according to your environment from [pytorch.org](https://pytorch.org/)
+2. Install the ultralytics package:
+   ```bash
+   cd ultralytics
+   pip install -e .
+   
 ## Scripts
 
 - **finetune.py**: Train and fine-tune our modified yolov8 model
@@ -18,7 +24,7 @@ This repository contains tools for training YOLOv8 models for crack/spalls detec
 python work/finetune.py --model-type YOLO --model-cfg models_cfg/model.yaml --model-weights pretrained_models/yolov8s.pt --data defects/dataset.yaml --epochs 100
 ```
 
-### Analyzing cracks
+### Quantification
 
 ```bash
 python work/quantifiers/crack_quantifieryy.py --model-path models/best.pt --image-path images/crack_sample.jpg --output-path results/analysis.jpg --pixel-to-mm-ratio 10.0
