@@ -1,1 +1,6 @@
 .idea
+thesis
+work/quantifiers/__pycache__
+work/quantifiers/improved_synthetic_data
+work/quantifiers/spallation_validation_results
+work/quantifiers/validation_results

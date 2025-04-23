@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 from skimage.measure import regionprops, label
 from sklearn.cluster import DBSCAN
-from ultralytics import YOLO
 import matplotlib.pyplot as plt
 from datetime import datetime
 import argparse
